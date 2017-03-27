@@ -1,0 +1,115 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Attendify</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Rubik+Mono+One|Rubik:400i|Signika|Anton|Titillium+Web|Lobster" rel="stylesheet">
+  <script href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="HomeX3118b">
+   <div class="container-fluid text-center">
+     <div class="heading"><h1>Attendify</h1></div>
+      <div class="para"><p><b> What is this app?</br>This app helps students and teachers keep track on one of the most debatable subjects;<br> Attendence.</br> </b>
+      </p>
+    </div>
+      <div class="row" id="buttons">
+      <div class="col-xs-6"><a class="btn btn-lg">
+        <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</div></a></div>
+      <div class = "col-xs-6"><a class="btn btn-lg"><div onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up </div></a></div>
+    </div>
+  </div>
+</div>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container-fluid">
+      <label><b>ID</b></label>
+      <input type="text" placeholder="Enter ID" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button class="button1" style="background-color:#0c72ad" type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" class="button1" style="background-color:#a0acb2" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container-fluid">
+      <label><b>ID</b></label>
+      <input type="text" placeholder="Enter ID" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Re-enter Password</b></label>
+      <input type="password" placeholder="Re-enter Password" name="psw" required onkeydown="return (event.keyCode!=13);">
+
+      <button class="button1" style="background-color:#0c72ad" type="submit">Sign Up as Teacher</button>
+      <button class="button1" style="background-color:#0c72ad" type="submit">Sign Up as Student</button>
+      <input type="checkbox" checked="checked">I agree with the <a href="#">Terms and Conditions</a>
+    </div>
+
+    <div class="container-fluid" style="background-color:#f1f1f1">
+      <button type="button" class="button1" style="background-color:#a0acb2" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+<script>
+// Get the modal
+var modal0 = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal0) {
+        modal0.style.display = "none";
+    }
+}
+// Get the modal
+var modal1 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+//to set the maximum scroll of the window
+
+$(function() {
+    $(window).resize(function() {
+        if(window.innerWidth > 640) {
+            $("body").css({
+                "overflow-x": "hidden"
+            });
+        } else {
+            $("body").css({
+                "overflow-x": "visible"
+            });
+        }
+    });
+});
+
+</script>

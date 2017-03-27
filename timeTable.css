@@ -1,0 +1,15 @@
+.w3-card-4{
+  background-color:#e8e8e8;
+  margin: 50px 20px 20px 11.5%;
+  padding: 55px;
+  text-align: center;
+  width: 75%;
+}
+.clicked{
+  background-color:#e83333;
+}
+body {
+    background-image: url("http://i.imgur.com/wMiAXnr.jpg");
+    background-color: #cccccc;
+    background-position: ;
+}
